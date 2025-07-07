@@ -1,0 +1,10 @@
+var empid = 1001;
+var ename = "Tom";
+var flag = true;
+console.log("Flag type is " + typeof (flag));
+console.log("Empid " + empid);
+console.log("Ename " + ename);
+console.log("flag " + flag);
+flag = "Yes";
+console.log("Flag type is " + typeof (flag));
+console.log("flag " + flag);

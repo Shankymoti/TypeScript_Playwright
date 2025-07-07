@@ -1,0 +1,10 @@
+let empid:number =1001;
+let ename:string="Tom";
+let flag : any = true;
+console.log("Flag type is "+ typeof(flag));
+console.log("Empid "+empid);
+console.log("Ename "+ename);
+console.log("flag "+flag);
+flag="Yes";
+console.log("Flag type is "+typeof(flag));
+console.log("flag "+flag);
