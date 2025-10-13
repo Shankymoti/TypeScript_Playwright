@@ -1,0 +1,86 @@
+
+Required ;
+Check in command prompt
+node -v
+npm -v
+npm install -g typescript
+tsc -v  // it is used to check ts version and tsc is used to compile from ts to js
+cd/
+mkdir TypeScriptExamples
+cd TypeScriptExamples
+npm init -y // intialize package.json
+npm install typescript --save-dev
+npx tsc --init // create tsconfig.json
+tsc -v
+or
+vsCode typescript compiler
+
+
+design - HTML and to validate the HTML and make the pages dynamic or interactive we need Javascript
+typescript - enhanced version of Javascript
+
+typescript is by Microsoft
+Add static typing, classes, interfaces,collection advanced features ontop of Javascript
+typescript is scripting language for Angular Application
+typescript will have extension .ts
+
+typescript can be compiled. On compilation(Transpiled) into plain Javascript
+because the browser or node environment can recognize Javascript
+
+typescript Benefitsg
+1. Type Safty : catch errors at compile time not at runtime
+
+let age = 40
+console.log(age);
+age=age+"five"
+console.log(age)
+// o/p. 40five
+
+NAN - if calculation can not happen it prints o/p as NAN
+let age = 40;
+age=age+"five"// Error at compile time
+
+
+Javascript supports - classes,constructor, methods Access Specifier - (All class variables are public). In case of Javascript if we want to create private variables then we have specify hash and variableName
+#variableName
+
+class Accounts{
+    #balance=0; // here it is private
+    constructor(accno,name, status,bal)//accno, name and status are by default public
+    {
+        this.accno=accno;
+        this.name = name;
+        this.status=status;
+        this.#balance=bal;
+    }
+
+    var obj= new Accounts(102,"Deepa","Active",6000);
+    obj.name="Anu";
+    obj.#balance=2000;//Error
+
+    //Javascript
+    function add(a,b){
+        return a+b;
+    }
+
+    console.log("10",5);// it will not be a errors
+    // o/p 105
+
+    // typescript
+
+    function add(a:number, b:number):number
+    {
+        return (a+b)
+    }
+    console.log("5",10)// Error
+}
+
+static typing(string, Boolen, number, any, undefined, null)
+interfaces
+classes and Inheritance
+Generics
+Enums
+Type inferences
+Async/Await support
+Decorators
+
