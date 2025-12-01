@@ -1,4 +1,119 @@
 
+var , let or const
+var age =40
+age+=10
+console.log(age)
+
+age="forty"
+age -=10
+
+Typescript is a superset of javascript which has static typing
+
+Typescript - Synctatic superset
+adding basic syntax of javascript
+Add - Data types
+      OOps concepts
+      Methods, constructor, inheritance
+      arrow functions
+
+Typesscript uses compiler for type checking
+Typescript is transpiled into javascript using the typescript compiler
+
+
+npm install typescript --save--dev
+npx tsc
+
+
+Boolean - true/false
+number  - it will support whole number and floating point number
+string - text value , char value
+
+symbol - unique identifier value 
+bigint - larger positive and negative number
+
+any - it is base for all datatypes, it can be initialized with any values
+
+
+let firstnaame : string = "Tom";//explicit initialization
+
+let firstname="Tom";//implicit type
+
+let firstname:string;// here it will work fine
+firstname=33;
+
+let firstname="TOM"; Implicitly some default value has to be initialized
+firstname=33;  // js will not throw any error for mismatch datatype but ts 
+
+
+let firstname:any;
+any will disable type checking  
+
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Typescript supports only single and multilevel inheritance and uses extends keyword
+
+---------------------------------------------------------------------------------------------------------------------------------
+Abstract class and interfaces
+
+suppose we have some methods that is common and want to implements then we use interfaces
+
+Inheritance is IS-A_Relationship and Interface is HAS-A-Relationship
+------------------In java-----------------------------------------
+Abstract Class 
+
+House is a type of building
+Villa is a types of building
+Flat is a type of building
+
+abstract calculateSqFeet()
+
+
+Interface : 
+fly():
+
+kite
+plane
+bird
+superman
+
+
+unrelated classes share some common behabiour then we go for interfaces.
+
+-------In typescript--------------------------------------
+In ts interfaces allows to define a structure or shape of an object. They are defined with data member and nethods, class which implements the interface has to follow the same structure. it is neither is a relationship nor has a relationship.
+
+and with the help of data members and methods which ever class is implementing interface,they should follow the same structure.
+
+
+UI -Entity, BAO, DAO
+  interface IShoppingCartDAO{
+int Register()
+List<T> Display();
+}
+
+class CustomerDAO implements IShoppingCartDAO
+{
+int Register()  -  register new customer
+}
+
+class CategoryDAO implements IShopingCartDAO
+{
+int Register() -  register new category
+}
+
+
+best example is collection like .add() methods in list and set.
+
+
+
+
+
+
+var , let or const.txt
+Displaying var , let or const.txt.
+----------------------------------------------------------------------------------------------------
 Required ;
 Check in command prompt
 node -v
