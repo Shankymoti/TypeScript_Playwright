@@ -1,3 +1,6 @@
+tsc filename.ts. // to run ts filename
+node filename.js // to rum js file
+
 
 var , let or const
 var age =40

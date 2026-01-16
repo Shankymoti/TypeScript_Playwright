@@ -1,0 +1,79 @@
+day_0
+
+Typescript Pre-requisite
+
+1. node js - JRE(Javascript Runtime Environment) > 18 version - node -validate --  helps to execute js program
+
+npm -  node pakagage maager. mpm -validate. --- comes with node and helps to install and execute the code
+
+Path of the node js inside Environment variableName
+
+2. Editior - IDE -(Vs code), Eclipse, Intellij, cursor
+
+3. Install Typescript
+
+npm install -g typescript -tsc -v
+
+4. Install tsx module - tsx - typescript Executor
+
+npm intsall -g tsx
+ --------
+
+ for mac pace for node
+ /usr/local/bin/node
+ /usr/local/bin/np,
+
+ Open System Terminal
+
+ nano ~/.zshrc
+
+ export PATH="/usr/local/bin:$PATH"
+
+ ctrl+o -> press enter -> ctrl+x
+ soource ~/.zshrc
+
+
+nano ~/.bash_profile
+
+export PATH="/usr/local/bin:PATH"
+soource ~/.bash_profile
+
+which node
+which npm
+node -v
+npm -v
+
+commnd + ~
+-----------------------
+npm install -g typescript
+
+if u get pemission issue
+set-ExecutionPolicy -Scope CurrentUser - ExecutionPolicy RemoteSigned
+ 
+ node -v 
+ npm -v
+
+ --- to execute ts file
+ Install tsx module - tsx - Typescript Executor
+
+ npm install -g tsx
+ tsx -v
+
+ ---------------------------
+ tsc vs tsx
+
+ -------------------------------
+
+
+ npm vs npx 
+
+
+ ------------------------------------------------------------------------
+
+npm install -g tsc     -> to install Typescript compiler
+npm install -g tsx     ->. To install typescript Executor
+
+
+
+
+
