@@ -1,0 +1,2 @@
+// first we have create a folder for screenshots like screenshort for this particular test file and provide path for screenshot floder 
+// if we add screenshot in  playwright.config.ts then it will automatically capture screenshot for all test files and store in test-results folder and it will create one folder for each test file and store screenshots in that folder
