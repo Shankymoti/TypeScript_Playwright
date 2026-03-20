@@ -30,6 +30,7 @@ export default defineConfig({
     screenshot: 'only-on-failure', // on, off, only-on-failure and it's default value is off 
     // screenshot will store in test-results folder and it will create one folder for each test file and store screenshots in that folder
     // manually entry for video recording
+    // this will add screenshot in html report
     video: 'retain-on-failure', // on, off, retain-on-failure and it's default value is off
 
     /* Base URL to use in actions like `await page.goto('')`. */
