@@ -22,7 +22,15 @@ test('screenshot  demo', async({page})=>{
     await page.waitForTimeout(3000)
 })
 
-//test.only()
+test.only('screenshot from config', async({page})=>{
+    await page.goto("https://www.demoblaze.com/index.html")
+    await page.locator('#login2').click()
+    await page.locator('#loginusername').fill('pavanol')
+    await page.locator('#loginpassword').fill('test@123X')
+    await page.getByRole('button',{name : 'Log in'}).click()
+    await expect(page.getByRole('link',{name : 'Log out'})).toBeVisible()
+    await expect(page.locator('#nameofuser')).toHaveText('Welcome pavanol')
+})
 /*
 import {test,expect} from '@playwright/test'
 
