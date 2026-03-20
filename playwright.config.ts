@@ -14,12 +14,12 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
-  fullyParallel: true,
+  fullyParallel: true,// if we set fullyParallel to false then it will run test files sequentially and if we set it to true then it will run test files in parallel
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
   //retries: process.env.CI ? 2 : 0,
-  //retries: 3, // it will retry failed test 3 times in local and in CI also
+  retries: 3, // it will retry failed test 3 times in local
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
@@ -32,12 +32,13 @@ export default defineConfig({
     // manually entry for video recording
     // this will add screenshot in html report
     video: 'retain-on-failure', // on, off, retain-on-failure and it's default value is off
+    // video record will only happen when it is mentined in playwright.config.ts file and it will store in test-results folder and it will create one folder for each test file and store videos in that folder
 
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',// we can also use on, off and retain-on-failure. It's default value is off
+    trace: 'off',// we can also use on, off and retain-on-failure. It's default value is off
     //we can view trace in 
   },
 
