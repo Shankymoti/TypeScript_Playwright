@@ -124,3 +124,4 @@ test.describe('mygroup',async()=>{
 
 
     
+//npx playwright test tests/Ex41_grouping.spec.ts --grep Group2
