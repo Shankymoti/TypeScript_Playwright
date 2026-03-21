@@ -13,6 +13,9 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
+  //grep: /@sanity/, // it will run only those test which have @smoke tag in their name
+  //grep: /(?=.*@sanity)(?=.*@regression)/, // it will run only those test which have both @sanity and @regression tag in their name
+//grepInvert: /@regression/, // it will run only those test which do not have @regression tag in their name
   /* Run tests in files in parallel */
   fullyParallel: true,// if we set fullyParallel to false then it will run test files sequentially and if we set it to true then it will run test files in parallel
   /* Fail the build on CI if you accidentally left test.only in the source code. */
