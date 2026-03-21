@@ -18,13 +18,15 @@ export default defineConfig({
 //grepInvert: /@regression/, // it will run only those test which do not have @regression tag in their name
   /* Run tests in files in parallel */
   fullyParallel: true,// if we set fullyParallel to false then it will run test files sequentially and if we set it to true then it will run test files in parallel
+  //fullyParallel: false, // it will run test files sequentially 
   /* Fail the build on CI if you accidentally left test.only in the source code. */
-  forbidOnly: !!process.env.CI,
+  //forbidOnly: !!process.env.CI,
   /* Retry on CI only */
   //retries: process.env.CI ? 2 : 0,
   retries: 3, // it will retry failed test 3 times in local
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  //workers: process.env.CI ? 1 : undefined,
+  workers:1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
@@ -50,6 +52,7 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
+     // fullyParallel: true, // it will run test in parallel in chromium browser
     },
 
     // {
