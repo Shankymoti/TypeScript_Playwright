@@ -1,0 +1,79 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="9.225362">
+<testsuite name="Ex52_reporters.spec.ts" timestamp="2026-03-22T18:30:17.860Z" hostname="chromium" tests="3" failures="1" skipped="0" time="15.202" errors="0">
+<testcase name="logotest" classname="Ex52_reporters.spec.ts" time="3.495">
+</testcase>
+<testcase name="title test" classname="Ex52_reporters.spec.ts" time="7.051">
+<failure message="Ex52_reporters.spec.ts:13:5 title test" type="FAILURE">
+<![CDATA[  [chromium] › Ex52_reporters.spec.ts:13:5 › title test ────────────────────────────────────────────
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Demo Web Shop1"
+    Received string:    "Demo Web Shop"
+
+      12 |
+      13 | test('title test', async ({ page }) => {
+    > 14 |     expect(await page.title()).toContain("Demo Web Shop1");
+         |                                ^
+      15 | });
+      16 |
+      17 | test('search test', async ({ page }) => {
+        at /Users/shashankkumar/Desktop/TypeScript_Playwright/tests/Ex52_reporters.spec.ts:14:32
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/Ex52_reporters-title-test-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/Ex52_reporters-title-test-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/Ex52_reporters-title-test-chromium/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Demo Web Shop1"
+    Received string:    "Demo Web Shop"
+
+      12 |
+      13 | test('title test', async ({ page }) => {
+    > 14 |     expect(await page.title()).toContain("Demo Web Shop1");
+         |                                ^
+      15 | });
+      16 |
+      17 | test('search test', async ({ page }) => {
+        at /Users/shashankkumar/Desktop/TypeScript_Playwright/tests/Ex52_reporters.spec.ts:14:32
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/Ex52_reporters-title-test-chromium-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/Ex52_reporters-title-test-chromium-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/Ex52_reporters-title-test-chromium-retry1/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/Ex52_reporters-title-test-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/Ex52_reporters-title-test-chromium/video.webm]]
+
+[[ATTACHMENT|test-results/Ex52_reporters-title-test-chromium/error-context.md]]
+
+[[ATTACHMENT|test-results/Ex52_reporters-title-test-chromium-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/Ex52_reporters-title-test-chromium-retry1/video.webm]]
+
+[[ATTACHMENT|test-results/Ex52_reporters-title-test-chromium-retry1/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="search test" classname="Ex52_reporters.spec.ts" time="4.656">
+</testcase>
+</testsuite>
+</testsuites>
