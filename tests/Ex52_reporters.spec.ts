@@ -11,7 +11,7 @@ test('logotest', async ({ page }) => {
 });
 
 test('title test', async ({ page }) => {
-    expect(await page.title()).toContain("Demo Web Shop1");
+    expect(await page.title()).toContain("Demo Web Shop");
 });
 
 test('search test', async ({ page }) => {
