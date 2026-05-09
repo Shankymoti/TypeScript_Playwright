@@ -1,6 +1,6 @@
 import {Page, Locator} from '@playwright/test';
 
-class LoginPage {
+export class LoginPage {
     // define variables - private and readonly
 
     private readonly page: Page;
@@ -26,7 +26,7 @@ class LoginPage {
     async clickLoginLink(): Promise<void> // we can also return the type of the method as void because it is not returning anything
     {
         await this.loginLink.click();
-        await this.page.waitForTimeout(20000);
+       // await this.page.waitForTimeout(20000);
     }
 
     async enterIserName(username : string) : Promise<void>

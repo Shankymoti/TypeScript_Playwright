@@ -26,11 +26,11 @@ export default defineConfig({
   retries: 1, // it will retry failed test 3 times in local
   /* Opt out of parallel tests on CI. */
   //workers: process.env.CI ? 1 : undefined,
-  workers:3,
+  workers:1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
  //reporter: 'html',
  //reporter: [['html', { open: 'never' }]], // it will generate html report but it will not open automatically
-//reporter: [['html', { open: 'on-failure' }]], // it will generate html report and it will open automatically only when test fails and default value is on-failure
+reporter: [['html', { open: 'on-failure' }]], // it will generate html report and it will open automatically only when test fails and default value is on-failure
 //reporter: [['html', { open: 'always', 'outputFolder': 'html-report' }]],// it will generate html report and it will open automatically after test execution and it will store report in html-report folder and this folder will be created in root directory and npx playwright show-report html-report command will open the report in browser
 // terminal command =  npx playwright test --reporter=html  
 //npx playwright test --reporter=reporter: [['html', { open: 'always', 'outputFolder': 'html-report' }]] // it will generate html report and it will open automatically after test execution and it will store report in html-report folder and this folder will be created in root directory and npx playwright show-report html-report command will open the report in browser
@@ -39,7 +39,7 @@ export default defineConfig({
 //reporter: 'dot', // it will show the test result in dot format in terminal
 //reporter: 'json', // it will generate json report and store it in test-results folder and this folder will be created in root directory
 //reporter: 'junit', // it will generate junit report and store it in test-results folder and this folder will be created in root directory
-reporter: 'allure-playwright', // it will generate allure report and store it in allure-results folder and this folder will be created in root directory and npx allure serve allure-results command will open the report in browser
+//reporter: 'allure-playwright', // it will generate allure report and store it in allure-results folder and this folder will be created in root directory and npx allure serve allure-results command will open the report in browser
 //reporter: [['html', { open: 'always', 'outputFolder': 'html-report' }],['list'],['line'],['dot'],['json',{outFile:'resultss.json'}],['junit',{outputFile:'results.xml'}],['allure-playwright'],['./mycustumreport.ts', { customOption: 'some value' }]], // it will generate html report and it will open automatically after test execution and it will store report in html-report folder and this folder will be created in root directory and npx playwright show-report html-report command will open the report in browser and it will also generate json and junit report and store it in test-results folder and this folder will be created in root directory
 //reporter: [['./mycustumreport.ts', { customOption: 'some value' }]], // it will use custom reporter and we can also pass custom options to the reporter
 use: {
@@ -67,10 +67,10 @@ use: {
      // fullyParallel: true, // it will run test in parallel in chromium browser
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
     // {
     //   name: 'webkit',
