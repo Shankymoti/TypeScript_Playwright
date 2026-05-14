@@ -8,4 +8,5 @@ test("Verify title", async ({page})=>{
    const title  :  string= await page.title()
    console.log("title: ", title);
    await  expect(page).toHaveTitle("My Shop");
+   expect(title).toBe("My Shop");
 })
